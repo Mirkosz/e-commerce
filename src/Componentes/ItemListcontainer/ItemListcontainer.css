@@ -1,0 +1,17 @@
+body{
+    background-image: url(../assets/garrett-butler-UrJ-fn2iRUM-unsplash\ \(1\).jpg);
+    background-size: 100%;
+    background-position-y: center;
+    background-attachment: fixed;
+    color: #90ef75;
+}
+.contenedor{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    padding-top: 400px; 
+}
+
+a{
+    color: #90ef75;
+    text-decoration: none;
+}
