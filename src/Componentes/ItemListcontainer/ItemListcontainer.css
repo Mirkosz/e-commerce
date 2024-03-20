@@ -5,10 +5,14 @@ body{
     background-attachment: fixed;
     color: #90ef75;
 }
+
 .contenedor{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 45px;
-    padding-top: 400px; 
+    margin: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 a{

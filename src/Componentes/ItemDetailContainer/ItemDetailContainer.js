@@ -4,25 +4,24 @@ import { ItemDetail } from '../ItemDetail/ItemDetail';
 import { products } from "../../data/data";
 
 export const ItemDetailContainer = () => {
-    const {ItemId} = useParams();
-    console.log(ItemId)
-
+    const { itemId } = useParams();
+  
     const [MyProduct, setMyProduct] = useState({});
     const MyPromise = new Promise((resolve) =>{
-        setTimeout(() => {
-            resolve(products);
-        }, 1500);
+      setTimeout(()=>{
+        resolve(products);
+      }, 500);
     });
+  
     useEffect(() => {
-        MyPromise.then((data) => {
-            setMyProduct(data.find((prod) => prod.id === ItemId));
-        });
-    }, [ItemId])
- 
+      MyPromise.then((data) =>{
+        setMyProduct(itemId ? data.find((produ) => produ.id === itemId) : data);
+      });
+    }, [itemId]);
  
     return (
     <div>
-        <ItemDetail prod={MyProduct}/>
+        <ItemDetail produ={MyProduct}/>
     </div>
   )
 }

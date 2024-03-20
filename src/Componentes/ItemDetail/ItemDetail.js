@@ -1,18 +1,20 @@
 import React from 'react'
 import { ItemCount } from '../ItemCount/ItemCount';
+import "./ItemDetail.css"
 
-export const ItemDetail = ({ prod }) => {
+
+export const ItemDetail = ({  }) => {
 	return (
-		<div>
+		<div className='containerItem'>
 			<article className='Card'>
                     <header className='header'>
-                        <h2 className='titleItem'></h2>
+                        <h2 className='titleItem'>ITEM</h2>
                     </header>
                 <section>
                     <p>Categoria:  </p>
                     <p>Descripcion: </p>
-                    <p className='info'>Precio: $ </p>
-                    <p className='info'>Stock disponible:</p>   
+                    <p >Precio: $ </p>
+                    <p >Stock disponible:</p>   
                 </section>
                 <footer className='InfoItem'>
                     <ItemCount/>

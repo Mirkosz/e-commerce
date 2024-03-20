@@ -1,0 +1,16 @@
+.containerItem{
+    display: flex;
+    justify-content: center;
+}
+
+.Card {
+	background: gray;
+    width: 400px;
+    height: 550px;
+    border-radius: 10%;
+    margin: 5%
+}
+
+.titleItem{
+    margin-bottom: 60%;
+}

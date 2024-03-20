@@ -1,0 +1,26 @@
+.card {
+	background: gray;
+    width: 300px;
+    height: 450px;
+    border-radius: 10%;
+    margin: 5%
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 60%;
+}
+
+.price{
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.info{
+    background-color: #90ef75;
+   margin: 10px;
+   border-radius: 5px;
+   border: 0px;
+}
+

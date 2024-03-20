@@ -1,8 +1,8 @@
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom';
 import { Logo } from './logo'
 import { CartWidget } from './cartwidget'
 import "./navbar.css";
-import { Link } from 'react-router-dom';
 
 
 export const Navbar = () => {
@@ -11,9 +11,9 @@ export const Navbar = () => {
         <Link to="/"><Logo/></Link>
 
         <div className='contenedorItems'>
-          <Link className='Items' to="category/Fuerza">Fuerza</Link>
-          <Link className='Items' to="category/Aerobico" >Aerobico</Link>
-          <Link className='Items' to="category/Accesorio">Accesorios</Link>
+          <NavLink className='navitems' to="category/Fuerza">Fuerza</NavLink>
+          <NavLink className='navitems' to="category/Aerobico" >Aerobico</NavLink>
+          <NavLink className='navitems' to="category/Accesorio">Accesorios</NavLink>
         </div>
 
         <CartWidget/>

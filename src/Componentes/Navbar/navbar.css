@@ -13,6 +13,10 @@ a{
     flex-direction: row;
     justify-content: space-between;
 }
-.Items{
-    margin: 10px;
+.navitems{
+    margin: 20px;
+}
+
+.navitems:active{
+    color: white;
 }
