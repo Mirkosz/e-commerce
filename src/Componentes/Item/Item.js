@@ -2,6 +2,7 @@ import React from 'react'
 import { ItemCount } from "../ItemCount/ItemCount"
 import "./Item.css"
 
+
 export const Item = ({ producto }) => {
 	return (
 		<div className="card">
@@ -13,7 +14,7 @@ export const Item = ({ producto }) => {
 
 			<ItemCount className="stock" stock={producto.stock} /> 
 
-			<button className="info">Ver Más...</button>
+			 <button className="info">Ver Más...</button>
 		</div>
 	);
 }; 
